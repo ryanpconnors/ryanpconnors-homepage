@@ -8,5 +8,5 @@ npm install
 gulp
 ```
 ```
-gcloud app deploy --project ryanpconnors-homepage
+gcloud app deploy dist/app.yaml --project ryanpconnors-homepage
 ```
