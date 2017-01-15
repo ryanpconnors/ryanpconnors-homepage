@@ -1,0 +1,16 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+/* TEAM */
+Developer: Ryan Connors
+Site: http://www.ryanpconnors.com
+Twitter: @ryanpconnors
+Location: Alexandra VA, USA
+
+/* THANKS */
+
+/* SITE */
+Last update: 2016/01/14
+Standards: HTML5, CSS3
+Components: Modernizr, jQuery, etc.
+Software: Google App Engine, Atom, Github
