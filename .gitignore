@@ -1,7 +1,12 @@
+# Node.JS
 node_modules
 dist/
+
+# Temporary Files
 .tmp
+
+# Google App Engine
 app.yaml
 
-# macOS
+# MacOS
 .DS_Store
