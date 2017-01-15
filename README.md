@@ -1,6 +1,6 @@
-My Homepage
+# My Homepage
 
-Deployment:
+## Deployment:
 ```
 npm install
 ```
