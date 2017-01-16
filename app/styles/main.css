@@ -35,8 +35,14 @@ html, body {
   padding-bottom: 10px;
 }
 
-.mdl-demo .social-button {
+.mdl-demo .social-media-button {
   padding: 2px;
+}
+
+.mdl-demo .social-media-button img {
+  height: 35px;
+  width: 35px;
+  padding: 0px;
 }
 
 .mdl-demo .mdl-layout.is-small-screen .mdl-layout__header-row h3 {
@@ -45,6 +51,12 @@ html, body {
 
 .mdl-demo .mdl-layout__tab-bar-button {
   display: none;
+}
+
+.mdl-demo .mdl-button--raised {
+  top: 50%;
+  display: block;
+  margin: 0 auto;
 }
 
 .mdl-demo .mdl-layout.is-small-screen .mdl-layout__tab-bar .mdl-button {
@@ -262,10 +274,11 @@ html, body {
   z-index: 99;
 }
 
-.mdl-card__media > img {
+.mdl-card__media>img {
   max-width: 100%;
   max-height: auto;
 }
+
 
 /* Portfolio */
 
@@ -287,6 +300,6 @@ img.article-image {
   padding: 0;
 }
 
-.no-left-padding{
+.no-left-padding {
   padding-left: 0;
 }
