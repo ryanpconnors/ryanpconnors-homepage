@@ -56,16 +56,57 @@ gulp.task('images', () =>
     .pipe($.size({title: 'images'}))
 );
 
+// Copy all app.yaml file to dist directory
+gulp.task('app_yaml', () =>
+  gulp.src([
+    'app.yaml',
+  ], {
+    dot: true
+  }).pipe(gulp.dest('dist'))
+    .pipe($.size({title: 'app_yaml'}))
+);
+
 // Copy all files at the root level (app)
 gulp.task('copy', () =>
   gulp.src([
     'app/*',
     '!app/*.html',
+    '!app/.DS_Store',
     'node_modules/apache-server-configs/dist/.htaccess'
   ], {
     dot: true
   }).pipe(gulp.dest('dist'))
     .pipe($.size({title: 'copy'}))
+);
+
+// Copy all files in Art Thief directory
+gulp.task('art_thief', () =>
+  gulp.src([
+    'app/art-thief/*',
+  ], {
+    dot: true
+  }).pipe(gulp.dest('dist/art-thief'))
+    .pipe($.size({title: 'art_thief'}))
+);
+
+// Copy all files in Civic Duty directory
+gulp.task('civic_duty', () =>
+  gulp.src([
+    'app/civic-duty/*',
+  ], {
+    dot: true
+  }).pipe(gulp.dest('dist/civic-duty'))
+    .pipe($.size({title: 'civic_duty'}))
+);
+
+// Copy all files in Resume directory
+gulp.task('resume', () =>
+  gulp.src([
+    'app/resume/*',
+  ], {
+    dot: true
+  }).pipe(gulp.dest('dist/resume'))
+    .pipe($.size({title: 'resume'}))
 );
 
 // Compile and automatically prefix stylesheets
@@ -197,7 +238,7 @@ gulp.task('serve:dist', ['default'], () =>
 gulp.task('default', ['clean'], cb =>
   runSequence(
     'styles',
-    ['lint', 'html', 'scripts', 'images', 'copy'],
+    ['lint', 'html', 'scripts', 'images', 'copy', 'art_thief', 'civic_duty', 'resume', 'app_yaml'],
     'generate-service-worker',
     cb
   )
