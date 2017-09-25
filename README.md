@@ -4,7 +4,7 @@ http://www.ryanpconnors.com
 
 ## Deployment:
 ```
-npm install
+yarn
 ```
 ```
 gulp
